@@ -1,6 +1,7 @@
 ---
 title: "QC a Risky Business: The Development of Novel Risk-Based Tools for Assessing QC Methods"
 collection: publications
+category: journal
 permalink: /publication/2023-01-01-QC-a-Risky-Business-The-Development-of-Novel-Risk-Based-Tools-for-Assessing-QC-Methods
 date: 2023-01-01
 venue: 'The Journal of Applied Laboratory Medicine'

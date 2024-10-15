@@ -1,6 +1,7 @@
 ---
 title: "Application of a Simulation Model to Estimate Treatment Error and Clinical Risk Derived from Point-of-Care International Normalized Ratio Device Analytic Performance"
 collection: publications
+category: journal
 permalink: /publication/2019-10-01-Application-of-a-Simulation-Model-to-Estimate-Treatment-Error-and-Clinical-Risk-Derived-from-Point-of-Care-International-Normalized-Ratio-Device-Analytic-Performance
 date: 2019-10-01
 venue: 'The Journal of Applied Laboratory Medicine'

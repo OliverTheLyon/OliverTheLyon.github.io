@@ -1,6 +1,7 @@
 ---
 title: "The nondeterministic state complexity of the site-directed deletion language operation"
 collection: publications
+category: journal
 permalink: /publication/2023-01-01-The-nondeterministic-state-complexity-of-the-site-directed-deletion-language-operation
 date: 2023-01-01
 venue: 'Theoretical Computer Science'

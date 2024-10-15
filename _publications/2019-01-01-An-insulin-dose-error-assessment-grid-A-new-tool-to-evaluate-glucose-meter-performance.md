@@ -1,6 +1,7 @@
 ---
 title: "An insulin-dose error assessment grid: A new tool to evaluate glucose meter performance"
 collection: publications
+category: journal
 permalink: /publication/2019-01-01-An-insulin-dose-error-assessment-grid-A-new-tool-to-evaluate-glucose-meter-performance
 date: 2019-01-01
 venue: 'Clinical Biochemistry'

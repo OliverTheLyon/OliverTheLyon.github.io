@@ -1,6 +1,7 @@
 ---
 title: "The Effect of Glucose Analytical Error and Biological Variation on the Risk of Misclassification of Community Patients using American Diabetes Association Diagnostic Criteria"
 collection: publications
+category: proceeding
 permalink: /publication/2019-01-01-The-Effect-of-Glucose-Analytical-Error-and-Biological-Variation-on-the-Risk-of-Misclassification-of-Community-Patients-using-American-Diabetes-Association-Diagnostic-Criteria
 date: 2019-01-01
 venue: 'In the proceedings of ATTD Meeting'

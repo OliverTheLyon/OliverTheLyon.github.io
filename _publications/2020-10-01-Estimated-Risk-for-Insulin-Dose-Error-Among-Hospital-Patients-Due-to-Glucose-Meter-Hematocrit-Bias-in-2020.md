@@ -1,6 +1,7 @@
 ---
 title: "Estimated Risk for Insulin Dose Error Among Hospital Patients Due to Glucose Meter Hematocrit Bias in 2020"
 collection: publications
+category: journal
 permalink: /publication/2020-10-01-Estimated-Risk-for-Insulin-Dose-Error-Among-Hospital-Patients-Due-to-Glucose-Meter-Hematocrit-Bias-in-2020
 date: 2020-10-01
 venue: 'Archives of Pathology &amp; Laboratory Medicine'

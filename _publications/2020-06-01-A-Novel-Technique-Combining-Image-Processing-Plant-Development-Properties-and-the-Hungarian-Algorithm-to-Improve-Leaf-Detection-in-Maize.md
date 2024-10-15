@@ -1,6 +1,7 @@
 ---
 title: "A Novel Technique Combining Image Processing, Plant Development Properties, and the Hungarian Algorithm, to Improve Leaf Detection in Maize"
 collection: publications
+category: proceeding
 permalink: /publication/2020-06-01-A-Novel-Technique-Combining-Image-Processing-Plant-Development-Properties-and-the-Hungarian-Algorithm-to-Improve-Leaf-Detection-in-Maize
 date: 2020-06-01
 venue: 'In the proceedings of Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) Workshops'

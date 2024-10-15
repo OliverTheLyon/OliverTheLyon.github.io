@@ -1,6 +1,7 @@
 ---
 title: "Clinical risk of using the Nova StatStrip glucose meter in a critically ill patient population: Analysis with the Surveillance and IDEA error grids"
 collection: publications
+category: proceeding
 permalink: /publication/2018-01-01-Clinical-risk-of-using-the-Nova-StatStrip-glucose-meter-in-a-critically-ill-patient-population-Analysis-with-the-Surveillance-and-IDEA-error-grids
 date: 2018-01-01
 venue: 'In the proceedings of CPOCT Meeting'

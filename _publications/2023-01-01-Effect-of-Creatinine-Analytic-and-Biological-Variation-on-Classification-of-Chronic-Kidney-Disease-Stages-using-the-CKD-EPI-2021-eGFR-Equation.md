@@ -1,6 +1,7 @@
 ---
 title: "Effect of Creatinine Analytic and Biological Variation on Classification of Chronic Kidney Disease Stages using the CKD-EPI 2021 eGFR Equation"
 collection: publications
+category: proceeding
 permalink: /publication/2023-01-01-Effect-of-Creatinine-Analytic-and-Biological-Variation-on-Classification-of-Chronic-Kidney-Disease-Stages-using-the-CKD-EPI-2021-eGFR-Equation
 date: 2023-01-01
 venue: 'In the proceedings of CSCC Annual Meeting'

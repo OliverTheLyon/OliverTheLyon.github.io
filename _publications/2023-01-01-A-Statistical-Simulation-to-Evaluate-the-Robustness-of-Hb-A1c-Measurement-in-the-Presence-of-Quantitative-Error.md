@@ -1,6 +1,7 @@
 ---
 title: "A Statistical Simulation to Evaluate the Robustness of Hb A1c Measurement in the Presence of Quantitative Error"
 collection: publications
+category: journal
 permalink: /publication/2023-01-01-A-Statistical-Simulation-to-Evaluate-the-Robustness-of-Hb-A1c-Measurement-in-the-Presence-of-Quantitative-Error
 date: 2023-01-01
 venue: 'The Journal of Applied Laboratory Medicine'
