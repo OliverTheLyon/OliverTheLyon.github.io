@@ -23,5 +23,30 @@ var addressPoints = [
     "Boston, USA",
     42.3601,
     -71.0589
+  ],
+  [
+    "Washington D.C., USA",
+    38.9072,
+    -77.0369
+  ],
+  [
+    "Chicago, USA",
+    41.8781,
+    -87.6298
+  ],
+  [
+    "Banff, Canada",
+    51.1784,
+    -115.5708
+  ],
+  [
+    "Ferrara, Italy",
+    44.8392,
+    11.6176
+  ],
+  [
+    "Winnipeg, Canada",
+    49.8954,
+    -97.1385
   ]
 ];
