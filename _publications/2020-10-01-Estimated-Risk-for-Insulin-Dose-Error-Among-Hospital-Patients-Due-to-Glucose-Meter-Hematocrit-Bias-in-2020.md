@@ -1,0 +1,10 @@
+---
+title: "Estimated Risk for Insulin Dose Error Among Hospital Patients Due to Glucose Meter Hematocrit Bias in 2020"
+collection: publications
+permalink: /publication/2020-10-01-Estimated-Risk-for-Insulin-Dose-Error-Among-Hospital-Patients-Due-to-Glucose-Meter-Hematocrit-Bias-in-2020
+date: 2020-10-01
+venue: 'Archives of Pathology &amp; Laboratory Medicine'
+paperurl: 'https://doi.org/10.5858/arpa.2020-0101-RA'
+citation: ' Mark Inman,  Andrew Lyon,  Oliver Lyon,  Martha Lyon, &quot;Estimated Risk for Insulin Dose Error Among Hospital Patients Due to Glucose Meter Hematocrit Bias in 2020.&quot; Archives of Pathology &amp;amp; Laboratory Medicine, 2020.'
+---
+[Access paper here](https://doi.org/10.5858/arpa.2020-0101-RA){:target="_blank"}
