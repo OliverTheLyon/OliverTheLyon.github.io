@@ -21,10 +21,10 @@ repository               : "OliverTheLyon/OliverTheLyon.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
+  avatar           : "olyon.png"
   name             : "Oliver Lyon"
   pronouns         : "he/him/they/them"  
-  bio              : "Short biography for the left-hand sidebar"
+  bio              : "Complexity Enthusiast"
   location         : "Calgary, Alberta, Canada"
   employer         : "University of Calgary"
   email            : "Oliver,lyon[at],ucalgary.ca" 
