@@ -1,7 +1,7 @@
 ---
 title: "A novel tool to relate glucose meter performance to clinical outcome: The Insulin Dose Error Assessment (IDEA) grid"
 collection: publications
-category: proceeding
+category: conferences
 permalink: /publication/2018-01-01-A-novel-tool-to-relate-glucose-meter-performance-to-clinical-outcome-The-Insulin-Dose-Error-Assessment-IDEA-grid
 date: 2018-01-01
 venue: 'In the proceedings of AACC/CSCC Annual Meeting'

@@ -1,7 +1,7 @@
 ---
 title: "Nondeterministic State Complexity of Site-Directed Deletion"
 collection: publications
-category: proceeding
+category: conferences
 permalink: /publication/2022-01-01-Nondeterministic-State-Complexity-of-Site-Directed-Deletion
 date: 2022-01-01
 venue: 'In the proceedings of Implementation and Application of Automata - 26th International Conference, CIAA 2022, Rouen, France, June 28 - July 1, 2022, Proceedings'

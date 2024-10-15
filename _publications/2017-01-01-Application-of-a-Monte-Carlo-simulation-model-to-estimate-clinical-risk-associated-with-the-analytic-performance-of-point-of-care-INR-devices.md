@@ -1,7 +1,7 @@
 ---
 title: "Application of a Monte Carlo simulation model to estimate clinical risk associated with the analytic performance of point of care INR devices"
 collection: publications
-category: proceeding
+category: conferences
 permalink: /publication/2017-01-01-Application-of-a-Monte-Carlo-simulation-model-to-estimate-clinical-risk-associated-with-the-analytic-performance-of-point-of-care-INR-devices
 date: 2017-01-01
 venue: 'In the proceedings of AACC/CSCC Annual Meeting'

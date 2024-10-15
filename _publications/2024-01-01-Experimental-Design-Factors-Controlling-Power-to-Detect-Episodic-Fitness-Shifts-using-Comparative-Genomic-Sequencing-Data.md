@@ -1,7 +1,7 @@
 ---
 title: "Experimental Design Factors Controlling Power to Detect Episodic Fitness Shifts using Comparative Genomic Sequencing Data"
 collection: publications
-category: proceeding
+category: conferences
 permalink: /publication/2024-01-01-Experimental-Design-Factors-Controlling-Power-to-Detect-Episodic-Fitness-Shifts-using-Comparative-Genomic-Sequencing-Data
 date: 2024-01-01
 venue: 'In the proceedings of BioNet'

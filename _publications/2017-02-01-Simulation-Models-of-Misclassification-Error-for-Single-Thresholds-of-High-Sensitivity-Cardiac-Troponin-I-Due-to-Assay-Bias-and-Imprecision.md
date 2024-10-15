@@ -1,7 +1,7 @@
 ---
 title: "Simulation Models of Misclassification Error for Single Thresholds of High-Sensitivity Cardiac Troponin I Due to Assay Bias and Imprecision"
 collection: publications
-category: journal
+category: manuscripts
 permalink: /publication/2017-02-01-Simulation-Models-of-Misclassification-Error-for-Single-Thresholds-of-High-Sensitivity-Cardiac-Troponin-I-Due-to-Assay-Bias-and-Imprecision
 date: 2017-02-01
 venue: 'Clinical Chemistry'

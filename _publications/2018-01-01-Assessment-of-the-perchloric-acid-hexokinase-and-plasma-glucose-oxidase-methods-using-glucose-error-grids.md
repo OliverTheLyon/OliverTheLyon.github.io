@@ -1,7 +1,7 @@
 ---
 title: "Assessment of the perchloric acid hexokinase and plasma glucose oxidase methods using glucose error grids"
 collection: publications
-category: proceeding
+category: conferences
 permalink: /publication/2018-01-01-Assessment-of-the-perchloric-acid-hexokinase-and-plasma-glucose-oxidase-methods-using-glucose-error-grids
 date: 2018-01-01
 venue: 'In the proceedings of CPOCT Meeting'

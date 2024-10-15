@@ -1,7 +1,7 @@
 ---
 title: "Assessment of the risk of the Nova StatStrip glucose meter using the Insulin Dose Error Assessment (IDEA) Grid"
 collection: publications
-category: proceeding
+category: conferences
 permalink: /publication/2018-01-01-Assessment-of-the-risk-of-the-Nova-StatStrip-glucose-meter-using-the-Insulin-Dose-Error-Assessment-IDEA-Grid
 date: 2018-01-01
 venue: 'In the proceedings of CPOCT Meeting'

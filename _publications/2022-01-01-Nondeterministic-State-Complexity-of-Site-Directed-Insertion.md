@@ -1,7 +1,7 @@
 ---
 title: "Nondeterministic State Complexity of Site-Directed Insertion"
 collection: publications
-category: journal
+category: manuscripts
 permalink: /publication/2022-01-01-Nondeterministic-State-Complexity-of-Site-Directed-Insertion
 date: 2022-01-01
 venue: 'Journal of Automata, Languages and Combinatorics'
