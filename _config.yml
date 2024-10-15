@@ -22,33 +22,31 @@ repository               : "OliverTheLyon/OliverTheLyon.github.io"
 author:
   # Biographic information
   avatar           : "profile.png"
-  name             : "Your Sidebar Name"
-  pronouns         : # example: "she/her"  
+  name             : "Oliver Lyon"
+  pronouns         : "he/him/they/them"  
   bio              : "Short biography for the left-hand sidebar"
-  location         : "Earth"
-  employer         : "Red Brick University"
-  uri              : # URL
-  email            : "none@example.org" 
+  location         : "Calgary, Alberta, Canada"
+  employer         : "University of Calgary"
+  email            : "Oliver,lyon[at],ucalgary.ca" 
 
   # Academic websites
   arxiv            : # URL - Update with the correct link to your profile
-  googlescholar    : "https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
-  impactstory      : # URL
-  orcid            : "http://orcid.org/yourorcidurl"
-  semantic         : # URL
+  googlescholar    : "https://scholar.google.ca/citations?user=hYI62_wAAAAJ&hl=en"
+  orcid            : "https://orcid.org/0000-0002-9693-8815"
+  semantic         : "https://www.semanticscholar.org/author/O.-A.-Lyon/47874212"
   pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
-  researchgate     : # URL
+  researchgate     : "https://www.researchgate.net/profile/Oliver-Lyon-2"
 
   # Repositories and software development
   bitbucket        : # Username - Update with your username on the site
   codepen          : # Username
   dribbble         : # Username
-  github           : "academicpages"
+  github           : "OliverTheLyon"
   kaggle           : # Username  
   stackoverflow    : # User number or user number and name (i.e., use "1" or "1/jeff-atwood")    
 
   # Social media
-  bluesky          : "bsky.app" # Replace this with you Bluesky username
+  bluesky          : # Replace this with you Bluesky username
   facebook         : # Username
   flickr           : # Username
   foursquare       : # Username
