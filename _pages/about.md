@@ -8,4 +8,4 @@ redirect_from:
 ---
 
 Example: editing a markdown file for a talk
-![Editing a markdown file for a talk](/images/CGOL5.png)
+![Editing a markdown file for a talk](/images/CGOL5.gif)
