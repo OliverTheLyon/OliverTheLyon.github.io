@@ -88,9 +88,9 @@ talks_category:
   draft:
     title: 'Draft Lecture'
   lecture:
-    title: 'Invited Talk'    
+    title: 'Invited Talks'    
   poster:
-    title: 'Confrence Poster'
+    title: 'Confrence Posters'
 
 # Site Settings
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
