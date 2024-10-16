@@ -84,7 +84,9 @@ publication_category:
 
 
 # Publication Category - The following the list of publication categories and their headings
-    talks_category:
+talks_category:
+  draft:
+    title: 'Draft Lecture'
   lecture:
     title: 'Invited Talk'    
   poster:
