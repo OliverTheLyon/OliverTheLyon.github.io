@@ -1,11 +1,16 @@
 ---
 permalink: /
-title: "Academic Pages is a ready-to-fork GitHub Pages template for academic personal websites"
+title: "About"
 author_profile: true
 redirect_from: 
   - /about/
   - /about.html
 ---
 
-Example: editing a markdown file for a talk
-![Editing a markdown file for a talk](/images/CGOL5.gif)
+
+## My work and research
+
+![](/images/CGOL5.gif width="250" height="250)
+
+## My background and history
+
