@@ -6,7 +6,22 @@ author_profile: true
 ---
 {% include base_path %}
 
-{% for post in site.talks reversed %}
-  {% include archive-single-talk.html %}
-{% endfor %}
+{% if site.talks_category %}
+  {% for category in site.talks_category  %}
+    {% assign title_shown = false %}
+    {% for post in site.talks reversed %}
+    {% unless title_shown %}
+        <h2>{{ category[1].title }}</h2><hr />
+        {% assign title_shown = true %}
+      {% endunless %}
+      {% include archive-single-talk.html %}
+    {% endfor %}
+  {% endfor %}
+{% else %}
+  {% for post in site.talks reversed %}
+    {% include archive-single-talk.html %}
+  {% endfor %}
+{% endif %}
+
+
 <iframe src="/talkmap/map.html" height="700" width="850" style="border:none;"></iframe>

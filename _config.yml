@@ -82,6 +82,14 @@ publication_category:
   thesis:
     title: 'Research Thesis'
 
+
+# Publication Category - The following the list of publication categories and their headings
+    talks_category:
+  lecture:
+    title: 'Invited Talk'    
+  poster:
+    title: 'Confrence Poster'
+
 # Site Settings
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 breadcrumbs              : false # true, false (default)
