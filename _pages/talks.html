@@ -11,11 +11,8 @@ author_profile: true
   {% for category in site.talks_category  %}
     {% assign title_shown = false %}
     {% for post in site.talks reversed %}
-      {% if post.category != category[0] %}
-        {% continue %}
-      {% endif %} 
     {% unless title_shown %}
-        <h2>{{ category[1].title }}</h2><hr />
+        <h2>{{ type[1].title }}</h2><hr />
         {% assign title_shown = true %}
       {% endunless %}
       {% include archive-single-talk.html %}
