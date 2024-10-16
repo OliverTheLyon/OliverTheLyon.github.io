@@ -4,8 +4,8 @@ collection: publications
 category: thesis
 permalink: /publication/2021-thesis
 date: 2021-04-01
-venue: 'Queen's University'
-citation: ' Oliver Lyon,  Kai Salomma, &quot;Nondeterministic State Complexity of Site-Directed Operations.&quot; Queen's University, 2021.'
+venue: 'Queen&quot s University'
+citation: ' Oliver Lyon,  Kai Salomma, &quot;Nondeterministic State Complexity of Site-Directed Operations.&quot; Queen&quots University, 2021.'
 ---
 
 In this thesis, we consider the nondeterministic state complexity of PCR-inspired
