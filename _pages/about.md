@@ -10,7 +10,7 @@ redirect_from:
 
 ## My work and research
 
-![](/images/CGOL5.gif width="250" height="250)
+![Game_of_Life](/images/CGOL5.gif)
 
 ## My background and history
 
