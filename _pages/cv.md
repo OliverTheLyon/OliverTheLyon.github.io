@@ -10,6 +10,6 @@ redirect_from:
 {% include base_path %}
 
 
-[CV](/files/CV.pdf)
+[CV](/files/CV.png)
 
 
