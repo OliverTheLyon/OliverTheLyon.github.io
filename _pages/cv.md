@@ -9,7 +9,7 @@ redirect_from:
 
 {% include base_path %}
 
-<iframe src="/files/CV.pdf&embedded=true" style="width:718px; height:700px;" frameborder="0"></iframe>
+<iframe src="/files/CV.pdf" style="width:718px; height:700px;" frameborder="0"></iframe>
 [CV](/files/CV.png)
 
 
