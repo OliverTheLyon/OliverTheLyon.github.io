@@ -1,0 +1,67 @@
+{% include base_path %}
+{% comment %}
+  A MARS-style MIPS simulator running assets/mips/GameOfLife.asm in the browser.
+  The simulator is assets/js/mips-sim.js, this panel is driven by assets/js/mips-player.js,
+  and the styles are at the end of _sass/_page.scss.
+{% endcomment %}
+<div class="mips-player" data-mips-player
+     data-src="{{ base_path }}/assets/mips/GameOfLife.asm"
+     data-display-base="0x10000000" data-display-size="32"
+     data-frame-label="generation"
+     data-pattern-prefix="start" data-random-pattern="startRandom">
+  <div class="mips-player__toolbar">
+    <button type="button" class="btn btn--small btn--info" data-mips-run>Run</button>
+    <button type="button" class="btn btn--small" data-mips-step>Step</button>
+    <button type="button" class="btn btn--small" data-mips-reset>Reset</button>
+    <label class="mips-player__field" data-mips-pattern-field>Starting pattern
+      <select data-mips-pattern>
+        <option value="startRandom" selected>Random field</option>
+        <option value="startGlider">Glider</option>
+        <option value="startBlinker">Blinker</option>
+        <option value="startBigBlinker">Massive blinker</option>
+        <option value="startAcorn">Acorn</option>
+      </select>
+    </label>
+    <label class="mips-player__field mips-player__field--speed">Run speed: <span data-mips-speed-label></span>
+      <input type="range" data-mips-speed>
+    </label>
+  </div>
+  <div class="mips-player__top">
+    <div class="mips-player__display">
+      <canvas data-mips-display role="img" aria-label="Bitmap display: Conway's Game of Life on a 32 by 32 grid, drawn by the MIPS program"></canvas>
+      <noscript><img src="{{ base_path }}/images/CGOL5.gif" alt="Conway's Game of Life animation"></noscript>
+    </div>
+    <div class="mips-player__info">
+      <div class="mips-player__heading">Current instruction</div>
+      <div class="mips-player__current">
+        <div><span data-mips-address></span> <span class="mips-player__dim" data-mips-code></span></div>
+        <div class="mips-player__current-basic" data-mips-basic></div>
+        <div class="mips-player__dim" data-mips-line></div>
+      </div>
+      <dl class="mips-player__stats">
+        <dt>Instructions run</dt><dd data-mips-executed>0</dd>
+        <dt>Generation</dt><dd data-mips-generation>0</dd>
+        <dt>Actual speed</dt><dd data-mips-measured></dd>
+        <dt>Random seed</dt><dd data-mips-seed></dd>
+      </dl>
+      <div class="mips-player__status" data-mips-status role="status">Loading the program&hellip;</div>
+    </div>
+  </div>
+  <div class="mips-player__heading">Text segment <span class="mips-player__hint" data-mips-hint>Pause, or slow the run speed to 30 inst/sec or less, to follow it line by line.</span></div>
+  <div class="mips-player__listing" data-mips-listing tabindex="0">
+    <table>
+      <thead><tr><th>Address</th><th class="mips-player__cell-code">Code</th><th>Basic</th><th>Source</th></tr></thead>
+    </table>
+  </div>
+  <details class="mips-player__panel" open>
+    <summary>Registers</summary>
+    <div class="mips-player__registers" data-mips-registers></div>
+  </details>
+  <details class="mips-player__panel">
+    <summary>Run I/O</summary>
+    <pre class="mips-player__console" data-mips-console></pre>
+  </details>
+  <p class="mips-player__footer"><a href="{{ base_path }}/assets/mips/GameOfLife.asm" download>Download the MIPS source (.asm)</a> &middot; <a href="{{ base_path }}/assets/mips/FinalCombinedCode.asm" download>the original 2016 version</a></p>
+</div>
+<script src="{{ base_path }}/assets/js/mips-sim.js" defer></script>
+<script src="{{ base_path }}/assets/js/mips-player.js" defer></script>

@@ -4,6 +4,9 @@
 #
 # (c) 2016-2017 R. Stuart Geiger, released under the MIT license
 #
+# Note: talkmap/org-locations.js is currently maintained by hand; add a new
+# [name, latitude, longitude] entry there when you present somewhere new.
+#
 # Run this from the _talks/ directory, which contains .md files of all your talks. 
 # This scrapes the location YAML field from each .md file, geolocates it with
 # geopy/Nominatim, and uses the getorg library to output data, HTML,

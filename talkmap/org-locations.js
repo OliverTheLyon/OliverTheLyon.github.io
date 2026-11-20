@@ -48,5 +48,15 @@ var addressPoints = [
     "Winnipeg, Canada",
     49.8954,
     -97.1385
+  ],
+  [
+    "Copenhagen, Denmark",
+    55.6761,
+    12.5683
+  ],
+  [
+    "Halifax, Canada",
+    44.6488,
+    -63.5752
   ]
 ];

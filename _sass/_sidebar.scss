@@ -258,3 +258,14 @@
     }
   }
 }
+
+/* Small image icons for sidebar links that have no icon-font glyph
+   (Project Rosalind, Project Euler). Sized to match Font Awesome "fa-fw". */
+.author__link-icon {
+  display: inline-block;
+  width: 1.25em;
+  height: 1em;
+  margin-right: 1em;
+  object-fit: contain;
+  vertical-align: -0.125em;
+}

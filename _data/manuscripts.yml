@@ -1,0 +1,33 @@
+# Manuscripts that are submitted or in preparation.
+# Shown at the bottom of the Publications page (_pages/publications.html).
+# When one is published, delete it here and add a file in _publications/ instead.
+
+- authors: "Karon, B. S., Lyon, O. A. S., Lyon, M. E. & Lyon, A. W."
+  title: "An Observational Study to identify pre-analytic factors that bias capillary whole blood glucose meter results in cardiovascular intensive care patients"
+  status: "Submitted"
+  year: 2026
+
+- authors: "DeTorres, M., Al-Annan, F., Lyon, O. A. S., Bashir, M. & Lyon, M. E."
+  title: "Development of a Data Driven Justification Process for Operational Support of Point of Care Glucose Meters"
+  status: "Submitted"
+  year: 2026
+
+- authors: "Lyon, O. A. S."
+  title: "Efficient power analysis for phylogenetic likelihood ratio tests: Bridging the information gap"
+  status: "In preparation"
+  year: 2026
+
+- authors: "Lyon, O. A. S. & de Koning, A. P. J."
+  title: "Multinucleotide Substitutions and Stochastic Tunneling"
+  status: "In preparation"
+  year: 2026
+
+- authors: "Lyon, O. A. S."
+  title: "Time Heterogeneous Evolution, Detectability and Inference"
+  status: "In preparation"
+  year: 2026
+
+- authors: "Panahy, A. et al."
+  title: "SLiM-Tree: Simulating Molecular Evolution along Phylogenies with Pure Population Genetics Models and Realistic Fitness Functions"
+  status: "In preparation"
+  year: 2026

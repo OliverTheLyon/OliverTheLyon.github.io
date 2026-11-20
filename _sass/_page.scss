@@ -399,3 +399,273 @@
   font-size: $type-size-6;
   text-transform: uppercase;
 }
+
+/*
+   MIPS simulator panel (Game of Life on the About page)
+   ========================================================================== */
+
+$mips-border: #d5d8db;
+$mips-panel: #f6f7f8;
+$mips-current: #fff2a8;
+
+.mips-player {
+  margin: 1.5em 0 2em;
+  font-family: $sans-serif;
+  font-size: 0.8rem;
+  line-height: 1.4;
+
+  button,
+  select,
+  input {
+    font-size: inherit;
+  }
+
+  table {
+    display: table;
+    width: 100%;
+    margin: 0;
+    border: 0;
+    border-collapse: collapse;
+    font-family: $monospace;
+    font-size: 0.72rem;
+  }
+
+  /* The theme fades colour changes in; here a highlight has to appear at once. */
+  tr,
+  th,
+  td,
+  span {
+    transition: none;
+  }
+
+  th,
+  td {
+    padding: 0.15em 0.6em;
+    border: 0;
+    text-align: left;
+    white-space: nowrap;
+  }
+
+  th {
+    position: sticky;
+    top: 0;
+    background: #e6e8ea;
+    font-family: $sans-serif;
+  }
+}
+
+.mips-player__toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5em 0.6em;
+  margin-bottom: 0.9em;
+
+  .btn {
+    margin: 0;
+  }
+}
+
+.mips-player__field {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.2em 0.5em;
+  margin: 0;
+
+  select {
+    width: auto;
+    margin: 0;
+    padding: 0.2em 0.3em;
+  }
+
+  input[type="range"] {
+    width: 11em;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.mips-player__field--speed {
+  font-variant-numeric: tabular-nums;
+}
+
+.mips-player__top {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  margin-bottom: 1em;
+}
+
+.mips-player__display {
+  flex: 0 1 256px;
+  min-width: 192px;
+
+  canvas {
+    display: block;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    background: #000;
+    image-rendering: crisp-edges;
+    image-rendering: pixelated;
+  }
+}
+
+.mips-player__info {
+  flex: 1 1 240px;
+  min-width: 0;
+}
+
+.mips-player__heading {
+  margin: 0 0 0.3em;
+  font-weight: bold;
+}
+
+.mips-player__hint {
+  margin-left: 0.5em;
+  color: #6f777d;
+  font-weight: normal;
+}
+
+.mips-player__current {
+  min-height: 5.2em;
+  padding: 0.5em 0.7em;
+  border: 1px solid $mips-border;
+  border-left: 4px solid $info-color;
+  background: $mips-panel;
+  font-family: $monospace;
+  font-size: 0.75rem;
+  overflow-wrap: anywhere;
+}
+
+.mips-player__current-basic {
+  font-size: 0.95rem;
+  font-weight: bold;
+}
+
+.mips-player__dim {
+  color: #6f777d;
+}
+
+.mips-player__stats {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.1em 1em;
+  margin: 0.7em 0;
+  font-variant-numeric: tabular-nums;
+
+  dt,
+  dd {
+    margin: 0;
+    font-size: inherit;
+  }
+
+  dt {
+    color: #6f777d;
+    font-weight: normal;
+  }
+
+  dd {
+    font-family: $monospace;
+    font-size: 0.75rem;
+  }
+}
+
+.mips-player__status {
+  color: #6f777d;
+}
+
+.mips-player__status--error {
+  color: #b3261e;
+  font-weight: bold;
+}
+
+.mips-player__listing {
+  position: relative;
+  height: 20em;
+  overflow: auto;
+  border: 1px solid $mips-border;
+  background: #fff;
+
+  tbody tr:nth-child(even) {
+    background: $mips-panel;
+  }
+
+  tbody tr.mips-player__row--current {
+    background: $mips-current;
+  }
+}
+
+.mips-player__line-number,
+.mips-player__comment {
+  color: #6f777d;
+}
+
+.mips-player__cell-source {
+  width: 100%;
+}
+
+.mips-player__panel {
+  margin-top: 0.8em;
+
+  summary {
+    font-weight: bold;
+    cursor: pointer;
+  }
+}
+
+.mips-player__registers {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(10em, 1fr));
+  gap: 0 0.8em;
+  margin-top: 0.4em;
+  padding: 0.5em 0.7em;
+  border: 1px solid $mips-border;
+  background: $mips-panel;
+  font-family: $monospace;
+  font-size: 0.72rem;
+}
+
+.mips-player__register {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5em;
+  padding: 0 0.2em;
+}
+
+.mips-player__register-name {
+  color: #6f777d;
+}
+
+.mips-player__register--changed {
+  background: $mips-current;
+}
+
+.mips-player__console {
+  height: 9em;
+  margin: 0.4em 0 0;
+  padding: 0.5em 0.7em;
+  overflow: auto;
+  border: 1px solid $mips-border;
+  background: #fff;
+  color: inherit;
+  font-family: $monospace;
+  font-size: 0.72rem;
+  line-height: 1.2;
+}
+
+.mips-player .mips-player__footer {
+  margin: 1.2em 0 0;
+  font-size: inherit;
+}
+
+@media (max-width: 600px) {
+  .mips-player__cell-code {
+    display: none;
+  }
+
+  .mips-player__display {
+    flex-basis: 100%;
+    max-width: 320px;
+  }
+}

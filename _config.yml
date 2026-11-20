@@ -23,11 +23,11 @@ author:
   # Biographic information
   avatar           : "olyon.png"
   name             : "Oliver Lyon"
-  pronouns         : "he/him/they/them"  
+  pronouns         : "he/him/they/them"
   bio              : "Complexity Enthusiast"
   location         : "Calgary, Alberta, Canada"
   employer         : "University of Calgary"
-  email            : "Oliver,lyon[at],ucalgary.ca" 
+  email            : "oliver.lyon@ucalgary.ca"
 
   # Academic websites
   arxiv            : # URL - Update with the correct link to your profile
@@ -42,6 +42,8 @@ author:
   codepen          : # Username
   dribbble         : # Username
   github           : "OliverTheLyon"
+  rosalind         : "oliveraslyon"   # Project Rosalind username
+  projecteuler     : "olyon"          # Project Euler username
   kaggle           : # Username  
   stackoverflow    : # User number or user number and name (i.e., use "1" or "1/jeff-atwood")    
 
@@ -83,14 +85,12 @@ publication_category:
     title: 'Research Theses'
 
 
-# Publication Category - The following the list of publication categories and their headings
+# Talk Category - The list of talk types (the `type` field in _talks) and their headings
 talks_category:
-  draft:
-    title: 'Draft Lecture'
   lecture:
-    title: 'Invited Talks'    
+    title: 'Talks and Lectures'
   poster:
-    title: 'Confrence Posters'
+    title: 'Conference Posters'
 
 # Site Settings
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
@@ -225,9 +225,6 @@ collections:
     output: true
     permalink: /:collection/:path/
   publications:
-    output: true
-    permalink: /:collection/:path/
-  portfolio:
     output: true
     permalink: /:collection/:path/
   talks:

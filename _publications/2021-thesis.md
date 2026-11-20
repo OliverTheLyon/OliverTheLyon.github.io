@@ -4,8 +4,8 @@ collection: publications
 category: thesis
 permalink: /publication/2021-thesis
 date: 2021-04-01
-venue: 'Queen&quot s University'
-citation: ' Oliver Lyon,  Kai Salomma, &quot;Nondeterministic State Complexity of Site-Directed Operations.&quot; Queen&quots University, 2021.'
+venue: "Queen's University"
+citation: "Oliver Lyon, &quot;Nondeterministic State Complexity of Site-Directed Operations.&quot; MSc thesis, Queen's University, 2021. Supervisor: Kai Salomaa."
 ---
 
 In this thesis, we consider the nondeterministic state complexity of PCR-inspired
@@ -22,4 +22,4 @@ nondeterministic finite automaton (NFA) for the operation provides an upper boun
 for the state complexity of the operation. Our construction improves the earlier upper bound in the literature. Existing literature did not give lower bounds for the
 nondeterministic state complexity of site-directed insertion and deletion. Using the
 fooling set method we establish lower bounds that are fairly close to the upper bound,
-albeit the lower bound is not tight
+albeit the lower bound is not tight.

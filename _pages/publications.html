@@ -32,5 +32,15 @@ author_profile: true
   {% endfor %}
 {% endif %}
 
+<!-- Work that is not published yet: edit _data/manuscripts.yml -->
+{% if site.data.manuscripts %}
+  <h2>Submitted and In Preparation</h2><hr />
+  <ul>
+  {% for item in site.data.manuscripts %}
+    <li>{{ item.authors }} <i>{{ item.title }}.</i> {{ item.status }}, {{ item.year }}.</li>
+  {% endfor %}
+  </ul>
+{% endif %}
+
 
 
