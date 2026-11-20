@@ -260,12 +260,14 @@
 }
 
 /* Small image icons for sidebar links that have no icon-font glyph
-   (Project Rosalind, Project Euler). Sized to match Font Awesome "fa-fw". */
-.author__link-icon {
+   (Project Rosalind, Project Euler). The icon and the gap after it add up to 1.75em,
+   the same as a Font Awesome icon with "fa-fw icon-pad-right", so the labels line up.
+   The selector has to outrank ".sidebar img", which stretches images to full width. */
+.author__urls .author__link-icon {
   display: inline-block;
-  width: 1.25em;
+  width: 1em;
   height: 1em;
-  margin-right: 1em;
+  margin-right: 0.75em;
   object-fit: contain;
   vertical-align: -0.125em;
 }

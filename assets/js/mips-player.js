@@ -86,11 +86,18 @@
     this.registerCells = [];
     this.registerValues = [];
 
+    // The program's pixels go to a small off-screen bitmap, one pixel per word, which is then
+    // copied to the canvas on the page at a whole-number scale (see fitDisplay).
     this.pixels = new Int32Array(this.displaySize * this.displaySize);
+    this.bitmap = document.createElement("canvas");
+    this.bitmap.width = this.displaySize;
+    this.bitmap.height = this.displaySize;
+    this.bitmapContext = this.bitmap.getContext("2d");
+    this.image = this.bitmapContext.createImageData(this.displaySize, this.displaySize);
     this.ui.canvas.width = this.displaySize;
     this.ui.canvas.height = this.displaySize;
     this.context = this.ui.canvas.getContext("2d");
-    this.image = this.context.createImageData(this.displaySize, this.displaySize);
+    this.fitDisplay();
 
     this.setUpPatterns();
     this.buildRegisters();
@@ -256,6 +263,15 @@
         self.schedule();
       }).observe(this.root);
     }
+
+    // Refit the display when the page is resized or zoomed, or the layout around it changes.
+    var refit = function () {
+      if (self.fitDisplay()) { self.drawDisplay(); }
+    };
+    window.addEventListener("resize", refit);
+    if ("ResizeObserver" in window) {
+      new ResizeObserver(refit).observe(this.root);
+    }
   };
 
   /* ---------------- running ---------------- */
@@ -346,6 +362,43 @@
 
   /* ---------------- drawing ---------------- */
 
+  // Size the canvas so that every pixel of the display covers the same whole number of screen
+  // pixels. At any other size, which is what most browser zoom levels would give it, some rows
+  // and columns come out a screen pixel bigger than their neighbours. The stylesheet says how
+  // much room the display may take; this picks the largest size that fits and narrows the box
+  // around the canvas to match. Returns true if the canvas was cleared and needs redrawing.
+  Player.prototype.fitDisplay = function () {
+    var canvas = this.ui.canvas;
+    var box = canvas.parentNode;
+    var ratio = window.devicePixelRatio || 1;                      // screen pixels per CSS pixel
+    box.style.flexBasis = canvas.style.width = canvas.style.height = "";   // the stylesheet's size
+    var room = canvas.getBoundingClientRect().width * ratio;
+    if (!room) { return false; }                                   // not laid out: leave it be
+    var side = Math.max(1, Math.floor(room / this.displaySize + 1e-6)) * this.displaySize;
+    box.style.flexBasis = canvas.style.width = canvas.style.height = (side / ratio) + "px";
+    if (canvas.width === side) { return false; }
+    canvas.width = side;
+    canvas.height = side;
+    return true;
+  };
+
+  // Bitmap display: one pixel per word, read straight out of simulated memory.
+  Player.prototype.drawDisplay = function () {
+    if (!this.machine) { return; }
+    this.machine.peekWords(this.displayBase, this.pixels);
+    var data = this.image.data;
+    for (var i = 0; i < this.pixels.length; i++) {
+      var colour = this.pixels[i];
+      data[i * 4] = (colour >>> 16) & 255;
+      data[i * 4 + 1] = (colour >>> 8) & 255;
+      data[i * 4 + 2] = colour & 255;
+      data[i * 4 + 3] = 255;
+    }
+    this.bitmapContext.putImageData(this.image, 0, 0);
+    this.context.imageSmoothingEnabled = false;                    // resizing the canvas resets this
+    this.context.drawImage(this.bitmap, 0, 0, this.ui.canvas.width, this.ui.canvas.height);
+  };
+
   Player.prototype.render = function (force, now) {
     var ui = this.ui;
     var machine = this.machine;
@@ -360,17 +413,7 @@
     ui.run.textContent = machine.halted ? "Restart" : this.paused ? "Run" : "Pause";
     ui.step.disabled = machine.halted;
 
-    // Bitmap display: one pixel per word, read straight out of simulated memory.
-    machine.peekWords(this.displayBase, this.pixels);
-    var data = this.image.data;
-    for (var i = 0; i < this.pixels.length; i++) {
-      var colour = this.pixels[i];
-      data[i * 4] = (colour >>> 16) & 255;
-      data[i * 4 + 1] = (colour >>> 8) & 255;
-      data[i * 4 + 2] = colour & 255;
-      data[i * 4 + 3] = 255;
-    }
-    this.context.putImageData(this.image, 0, 0);
+    this.drawDisplay();
 
     if (this.consoleDirty) {
       ui.console.textContent = this.console;
